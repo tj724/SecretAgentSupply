@@ -1,0 +1,30 @@
+/*Global Styles*/
+html{
+    font-family: Helvetica,sans-serif;
+    font-size: 18px;
+}
+
+
+
+/*Header Styles*/
+
+#logo{
+    background: black;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-content: center;
+}
+
+#logo img{
+    width: 5%;
+    height: auto;
+}
+
+
+
+/*Main Content Styles*/
+
+
+
+
