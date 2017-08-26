@@ -44,7 +44,6 @@ html{
 }
 
 #bannertext{
-    
     padding: 2em 3em;
     background: black;
     color: white;
@@ -83,6 +82,10 @@ h1, h4{
     color: white;
 }
 
+#tabletmenu{
+    display: none;
+}
+
 
 /*Main Content Styles*/
 
@@ -94,24 +97,23 @@ h1, h4{
 
 .product{
     width: 30%;
-    height: auto;
-    border: 2px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
     
 }
 
 
 .imgcont{
+    border: 4px solid black;
+    padding: 2em 0;
+    height: 9em;
+    display: flex;
+    align-content: center;
+    justify-content: center;
     
 }
 
 .product img{
     max-width: 8em;
-    height: auto;
-    margin: 0 auto;
-    padding: 2em;
+    border-style: none;
 }
 
 
@@ -122,6 +124,7 @@ h1, h4{
     text-align: center;
     padding: 0.5em;
 }
+
 
 #info{
     display: flex;
@@ -150,4 +153,71 @@ span.infohead{
     padding: 5em 0;
     margin-top: 4em;
     text-align: left;
+}
+
+
+/*Tablet Media Queries*/
+
+@media only screen and (max-width: 1024px){    
+    #bignav, .product:last-child{
+        display: none;
+    }
+    
+    #tabletmenu{
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .product{
+        width: 47%;
+    }
+}
+
+/*Cellular Media Queries*/
+@media only screen and (max-width: 470px){
+    #banner{
+        height: 15rem;
+    }
+    
+    #banner .container{
+        width: 100%;
+    }
+    
+    #bannertext{
+        top:10rem;
+        padding:1rem 2rem; 
+        width: 100%;
+    }
+    
+    #bannertext h4{
+        font-size: 0.77rem;
+        width: 100%;
+    }
+    
+    #bannertext h1{
+        font-size: 1rem;
+    }
+   
+    .product:nth-child(2){
+        display: none;
+    }
+    
+    .product{
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    #info{
+        display: block;
+    }
+    
+    #info div{
+        width: 90%;
+        margin: 0.5rem auto;
+    }
+    
+    #footer{
+        text-align: center;
+    }  
+    
 }
